@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IndexedDB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>IndexedDB</h1>
+
+    <form onsubmit="saveItem(); return false;">
+        <input type="text" id="nameInput" placeholder="Введите имя" required>
+        <button type="submit">Добавить запись</button>
+    </form>
+
+    <table id="dataTable" border="1">
+        <thead>
+            <tr>
+                <th>Имя</th>
+                <th>Изменить</th>
+                <th>Удалить</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+</html>
